@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "612996959170",
+    "firebase_url": "https://solucionesagc-770d5.firebaseio.com",
+    "project_id": "solucionesagc-770d5",
+    "storage_bucket": "solucionesagc-770d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612996959170:android:7be42d01ed252993",
+        "android_client_info": {
+          "package_name": "com.example.felipearango.solucionesagropecuarias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612996959170-l1u7nq5duftoprt6juh89hnce9d3fast.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVP20XPE7o7M-MosoE1S5w9i_HTKRG-mk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
