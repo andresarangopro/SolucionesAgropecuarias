@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.felipearango.solucionesagropecuarias.Registro_Cultivo"
+    tools:showIn="@layout/activity_registro__cultivo">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            android:background="@color/coloBackground"
+            android:textColor="@color/colorWhite"
+            android:text="NOMBRE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:text="Lote No"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etLote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:text="Total plantas"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etPlantas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Fecha cultivo"
+                android:textAlignment="gravity" />
+            <Spinner
+                android:id="@+id/spDia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+            <Spinner
+                android:id="@+id/spMes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+            <Spinner
+                android:id="@+id/spAño"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Distancia entre plantas cm"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etDistancia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Hojas en cm: "
+                android:textAlignment="gravity" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Largo "
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etLargo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Ancho "
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etAncho"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Peso g: "
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Estado cultivo: "
+                android:textAlignment="gravity" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Grado Brix"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etGrado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Origen"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etOrigen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Manejo organico"
+                android:textAlignment="gravity" />
+
+            <CheckBox
+                android:id="@+id/chOrganico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Cantidad x planta en cc"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etCantidadPlanta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Cultivo asociado"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chCultivoAsociado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Especie"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etEspecie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Maneja riesgo"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chRiesgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Hace deshoja"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chDeshoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Retira escapo floral"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chFloral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Retira hijuelos"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chHijuelos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Planta enferma"
+                android:textAlignment="gravity" />
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

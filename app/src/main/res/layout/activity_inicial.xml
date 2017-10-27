@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.felipearango.solucionesagropecuarias.Inicial">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp"
+            android:gravity="center_horizontal"
+            android:text="Soluciones"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="28dp"
+            android:gravity="center_horizontal"
+            android:text="Agropecuarias de Colombia"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="50">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="12dp"
+            android:textSize="15dp"
+
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esta aplicación se conecta con la red de productores de Aloe Vera de Solciones Agropecuarias de Colombia. \nPara usarla primero debe registrarse con sus datos personales"/>
+
+        <Button
+            android:textSize="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="4"
+            android:text="Registrarse"
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:layout_weight="5"
+        android:text="Soluciones agropecuarias de Colombia S.A.S. \n 2017"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

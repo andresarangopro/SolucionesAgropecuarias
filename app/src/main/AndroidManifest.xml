@@ -9,13 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Inicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Ingreso" />
+        <activity android:name=".MenuPrincipal" />
+        <activity
+            android:name=".Registro_Productor"
+            android:label="@string/title_activity_registro__productor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registro_Cultivo"
+            android:label="@string/title_activity_registro__cultivo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cultivo_1"
+            android:label="@string/title_activity_cultivo_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistroFinca"
+            android:label="@string/title_activity_registro_finca"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

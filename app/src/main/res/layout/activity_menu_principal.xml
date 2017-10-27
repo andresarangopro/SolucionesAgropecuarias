@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.felipearango.solucionesagropecuarias.MenuPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="(Nombre)"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Técnico/productor"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        android:layout_weight="70"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/box_size">
+            <Button
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnArribaIzq"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnArribaDer"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/box_size">
+            <Button
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnCentroIzq"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"  />
+            <Button
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnCentroDer"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/box_size">
+            <Button
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnAbajoIzq"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"  />
+            <Button
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnAbajoDer"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

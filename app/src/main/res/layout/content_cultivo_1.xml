@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.felipearango.solucionesagropecuarias.Cultivo_1"
+    tools:showIn="@layout/activity_cultivo_1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            android:background="@color/coloBackground"
+            android:textColor="@color/colorWhite"
+            android:text="Nombre - Nombre finca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Fabrica producto"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chFloral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Producto"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etProducto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Vr diferenciador"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etDiferenciador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Autoconsumo"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chConsumo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Cantidad"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etCantidadConsumo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Vende perca"
+                android:textAlignment="gravity" />
+            <CheckBox
+                android:id="@+id/chVende"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Cantidad"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etCantidadPerca"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Frecuencia de venta"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etFDeVenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Entiedad comercializa"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etEntiedad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Prom. prod. cultivo"
+                android:textAlignment="gravity" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Frecuencia producción"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/etFProdu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:text="Registro fotográfico"
+                android:textAlignment="gravity" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SolucionesAgropecuarias</string>
+    <string name="title_activity_registro__productor">Registro_Productor</string>
+    <string name="title_activity_registro__cultivo">Registro_Cultivo</string>
+    <string name="title_activity_cultivo_1">Cultivo_1</string>
+    <string name="title_activity_registro_finca">RegistroFinca</string>
 </resources>
