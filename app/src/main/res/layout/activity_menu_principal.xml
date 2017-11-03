@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -67,24 +68,35 @@
             android:weightSum="2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/box_size">
-            <Button
-                android:elevation="4dp"
+            <ImageButton
+                android:id="@+id/iBtnArribaIzq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                app:srcCompat="@drawable/farm" />
+          <!--  <Button
                 android:id="@+id/btnArribaIzq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/border"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent" />
-            <Button
-                android:elevation="4dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnArribaDer"
-                android:layout_marginLeft="20dp"
                 android:background="@drawable/border"
                 android:layout_weight="1"
+                android:elevation="4dp" />-->
+
+            <ImageButton
+                android:id="@+id/iBtnArribaDer"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"  />
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:elevation="4dp"
+                app:srcCompat="@drawable/encuest"/>
         </LinearLayout>
 
         <LinearLayout
@@ -95,24 +107,26 @@
             android:weightSum="2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/box_size">
-            <Button
+            <ImageButton
                 android:elevation="4dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnCentroIzq"
+                android:id="@+id/iBtnCentroIzq"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/border"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"  />
-            <Button
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/programm"/>
+            <ImageButton
                 android:elevation="4dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnCentroDer"
+                android:id="@+id/iBtnCentroDer"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/border"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/report"/>
         </LinearLayout>
 
         <LinearLayout
@@ -123,25 +137,30 @@
             android:weightSum="2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/box_size">
-            <Button
+            <ImageButton
                 android:elevation="4dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnAbajoIzq"
+                android:id="@+id/iBtnAbajoIzq"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/border"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"  />
-            <Button
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/informe"/>
+            <ImageButton
                 android:elevation="4dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnAbajoDer"
+                android:id="@+id/iBtnAbajoDer"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/border"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/config"/>
 
         </LinearLayout>
+
+
     </LinearLayout>
+
 </LinearLayout>

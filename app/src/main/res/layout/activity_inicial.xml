@@ -67,15 +67,17 @@
             android:layout_width="match_parent"
             android:layout_height="0dp" />
     </LinearLayout>
+
     <TextView
-        android:textColor="@color/colorWhite"
+        android:id="@+id/edJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
         android:background="@color/colorAccent"
         android:gravity="center_horizontal"
-        android:textSize="15dp"
-        android:layout_weight="5"
         android:text="Soluciones agropecuarias de Colombia S.A.S. \n 2017"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
 
 
 </LinearLayout>

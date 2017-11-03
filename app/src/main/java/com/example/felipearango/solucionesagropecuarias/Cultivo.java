@@ -25,7 +25,7 @@ public class Cultivo {
     private int manejoOrganico;
     private String productos;
     private float cantidadXPlanta;
-    private float cultivoAsociado;
+    private int cultivoAsociado;
     private String especie;
     private int manejoRiego;
     private int haceDesahoje;
@@ -41,7 +41,7 @@ public class Cultivo {
                    String fechaSiembra, float distanciaEntrePlantas,
                    float largoHojas, float anchoHojas, float pesoHojas, String estadoCultivo,
                    float gradoBrix, String origen, int manejoOrganico, String productos,
-                   float cantidadXPlanta, float cultivoAsociado, String especie,
+                   float cantidadXPlanta, int cultivoAsociado, String especie,
                    int manejoRiego,int haceDesahoje, int retiraEscapeFloral, int retiraHijuelos,
                    String plantaEnferma) {
 
@@ -67,6 +67,8 @@ public class Cultivo {
         this.retiraHijuelos = retiraHijuelos;
         this.plantaEnferma = plantaEnferma;
     }
+
+    public Cultivo (){}
 
 
     /////////////////////
@@ -186,11 +188,11 @@ public class Cultivo {
         this.cantidadXPlanta = cantidadXPlanta;
     }
 
-    public float getCultivoAsociado() {
+    public int getCultivoAsociado() {
         return cultivoAsociado;
     }
 
-    public void setCultivoAsociado(float cultivoAsociado) {
+    public void setCultivoAsociado(int cultivoAsociado) {
         this.cultivoAsociado = cultivoAsociado;
     }
 

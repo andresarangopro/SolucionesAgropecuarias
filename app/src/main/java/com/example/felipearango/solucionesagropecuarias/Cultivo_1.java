@@ -1,6 +1,5 @@
 package com.example.felipearango.solucionesagropecuarias;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,11 +7,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioGroup;
 
-public class Cultivo_1 extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+public class Cultivo_1 extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnRegistrar;
-
+    protected DatabaseReference databaseReference;
+    private FirebaseDatabase firebaseDatabase;
+    private EditText etCedula,etNombre, etApellido, etCelular, etEmail;
+    private RadioGroup rgSexo;
+    private CheckBox chIngresos, cbEmpleado, cbPensionado, cbCasado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +38,11 @@ public class Cultivo_1 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        btnRegistrar = (Button)findViewById(R.id.btnRegistrar);
-        btnRegistrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Registro_Cultivo.class));
-            }
-        });
+
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }

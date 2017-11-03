@@ -1,5 +1,7 @@
 package com.example.felipearango.solucionesagropecuarias;
 
+import java.util.ArrayList;
+
 /**
  * Created by Felipe Arango on 8/10/2017.
  */
@@ -24,6 +26,8 @@ public class Productor {
     private int casado;
     private int personasACargo;
     private int ingProvFinc;
+    private ArrayList<Finca> listfinca;
+    private ArrayList<Cultivo> listcultivo;
 
     /////////////////////////////
     //Constructor
@@ -48,6 +52,8 @@ public class Productor {
         this.personasACargo = personasACargo;
         this.ingProvFinc = ingProvFinc;
     }
+
+    public Productor(){}
 
     /////////////////////////////
     // getter and setter
@@ -164,5 +170,21 @@ public class Productor {
 
     public void setIngProvFinc(int ingProvFinc) {
         this.ingProvFinc = ingProvFinc;
+    }
+
+    public ArrayList<Finca> getListfinca() {
+        return listfinca;
+    }
+
+    public void setListfinca(ArrayList<Finca> listfinca) {
+        this.listfinca = listfinca;
+    }
+
+    public ArrayList<Cultivo> getListcultivo() {
+        return listcultivo;
+    }
+
+    public void setListcultivo(ArrayList<Cultivo> listcultivo) {
+        this.listcultivo = listcultivo;
     }
 }

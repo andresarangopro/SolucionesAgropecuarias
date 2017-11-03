@@ -56,6 +56,7 @@ public class Finca {
         this.cultivaAloe = cultivaAloe;
     }
 
+    private Finca(){}
     ///////////////////////////////
     //Getters and Setters
     //////////////////////////////

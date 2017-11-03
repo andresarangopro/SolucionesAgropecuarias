@@ -66,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"></Spinner>
             <Spinner
-                android:id="@+id/spAño"
+                android:id="@+id/spAno"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"></Spinner>
         </LinearLayout>
@@ -137,7 +137,9 @@
                 android:gravity="fill_vertical"
                 android:text="Estado cultivo: "
                 android:textAlignment="gravity" />
+
             <Spinner
+                android:id="@+id/spEstCultivo"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"></Spinner>
 
@@ -298,11 +300,18 @@
                 android:text="Planta enferma"
                 android:textAlignment="gravity" />
 
-
             <Spinner
+                android:id="@+id/spPEnferma"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"></Spinner>
 
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_button"
+                android:text="+" />
         </LinearLayout>
 
     </LinearLayout>

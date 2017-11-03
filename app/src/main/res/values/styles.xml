@@ -22,5 +22,9 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="btnStyle">
+        <item name="android:colorBackground">#fff</item>
+        <item name="android:background">@drawable/ic_screenshot_4</item>
+    </style>
 
 </resources>

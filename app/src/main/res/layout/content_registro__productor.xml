@@ -78,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
                 <RadioButton
+                    android:id="@+id/rBHombre"
                     android:text="Hombre"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" />
@@ -107,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"></Spinner>
             <Spinner
-                android:id="@+id/spAño"
+                android:id="@+id/spAno"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"></Spinner>
         </LinearLayout>
@@ -141,6 +142,24 @@
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="Contraseña"
+                android:textAlignment="gravity" />
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
